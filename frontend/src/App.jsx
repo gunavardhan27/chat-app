@@ -1,4 +1,4 @@
-import { useState} from 'react'
+import { Suspense, useState} from 'react'
 import { lazy } from 'react'
 import Auth from './components/Auth'
 import {BrowserRouter,Route,Routes,Router} from 'react-router-dom'
@@ -11,6 +11,7 @@ function App() {
   let user=true
   return (
     <BrowserRouter>
+    <Suspense fallback={<div>...loading</div>}>
     <Routes>
       <Route element={<ProtectedRoute user={user} />}>
       <Route path='/' element={<Home />} />
@@ -22,6 +23,7 @@ function App() {
         </ProtectedRoute>} />
       <Route path='*' element={<NotFound />} />
     </Routes>
+    </Suspense>
     </BrowserRouter>
   )
 }

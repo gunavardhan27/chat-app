@@ -7,7 +7,7 @@ export const chats = [
     },
     {
         name:'reva-bai',
-        _id:2,
+        _id:'2',
         groupChat:false,
         members:['2','4']
     }

@@ -4,7 +4,7 @@ import ChatItem from './ChatItem'
 const ChatList = ({chats}) => {
     const onlineUsers = ['1']
   return (
-    <div className='flex flex-col items-start justify-start'>
+    <div className='flex flex-col items-start justify-start m-2'>
         {chats?.map(data=>{
             const {_id,name,members} = data
             const isOnline=members?.some(member=>onlineUsers.includes(member))

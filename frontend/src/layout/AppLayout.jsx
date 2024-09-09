@@ -2,6 +2,7 @@ import React from 'react'
 import Header from './Header'
 import ChatList from '../components/ChatList'
 import { chats } from '../constants/DuplicateChats'
+import Profile from '../components/Profile'
 const AppLayout = ()=> (WrappedComponent) => {
 return (props)=>{
   return (
@@ -10,7 +11,7 @@ return (props)=>{
         <div className='grid grid-cols-3 h-screen gap-3'>
           <ChatList chats={chats} />
         <WrappedComponent {...props} /> 
-        <div className='bg-gray-600'>Third</div>
+        <Profile />
         </div>
         
     </div>
