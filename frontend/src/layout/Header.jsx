@@ -12,7 +12,7 @@ const Header = () => {
     console.log(isSearch)
   }
   return (
-    <div className='h-[50px] bg-red-500 text-white shadow-black shadow-md z-50 flex flex-row items-center justify-between'>
+    <div className='h-[50px] bg-red-500 text-white shadow-black shadow-md z-50 flex flex-row items-center justify-between relative'>
         <p className='basis-2/3 text-3xl font-bold'>Chatio</p>
         <div className='basis-1/3 flex flex-row items-center justify-start gap-8'>
           <FaSearch className='' onClick={handleSearch} />

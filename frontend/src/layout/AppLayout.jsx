@@ -8,7 +8,7 @@ return (props)=>{
   return (
     <div>
         <Header />
-        <div className='grid grid-cols-3 h-screen gap-3'>
+        <div className='grid grid-cols-3 h-screen'>
           <ChatList chats={chats} />
         <WrappedComponent {...props} /> 
         <Profile />
